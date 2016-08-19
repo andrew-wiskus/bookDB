@@ -1,0 +1,23 @@
+
+CREATE TABLE pets (
+    id SERIAL PRIMARY KEY,
+    pet_name character varying(60),
+    pet_breed character varying(60),
+    pet_color character varying(60),
+    pet_owner integer REFERENCES customers
+);
+
+CREATE TABLE owners (
+    id SERIAL PRIMARY KEY,
+    customer_firstname character varying(60),
+    customer_lastname character varying(60)
+);
+
+ALTER TABLE pets ADD pet_owner integer REFERENCES owners;
+
+CREATE TABLE visits (
+    id SERIAL PRIMARY KEY,
+    visit_checkin character varying(60),
+    visit_checkout character varying(60),
+    visit_pets integer REFERENCES pets
+);

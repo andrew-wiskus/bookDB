@@ -1,0 +1,41 @@
+h1 {
+  font-family: 'Taviraj', serif;
+  color: indigo;
+}
+
+h2 {
+  color: gray;
+}
+#showAll{
+ position: absolute;
+ top: 30px;
+ left: 120px;
+ margin-left:0;
+}
+
+.dateSelector{
+  display: inline-block;
+  width: 170px;
+}
+#dateDropDown{
+  height:70px;
+  font-size: 20px;
+}
+#book-list{
+  padding:0;
+}
+.bookTable{
+  display:inline-block;
+  width:100px;
+  margin-left:15px;
+}
+
+.genreSelect{
+  display:inline-block;
+  width: 200px;
+}
+
+.authorSelect{
+  display:inline-block;
+  width: 200px;
+}
